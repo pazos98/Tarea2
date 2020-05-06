@@ -1,0 +1,30 @@
+Proceso adivinaUnNumero
+	
+	
+	
+	
+	definir numero como entero ;
+	definir minumero como entero ;
+	definir contador como entero ;
+	contador <-0 ;
+	numero <- Aleatorio (1,100);
+	Repetir
+		Escribir "introduce un número;";
+		Leer minumero;
+		Si minumero = numero  Entonces
+			Escribir "congratulations! has acertado";
+		SiNo
+			Si minumero < numero Entonces
+				Escribir "no, es un número mayor";
+			SiNo
+				Escribir "no es correcto, introduce un número menor";
+			FinSi
+		FinSi
+		contador<- contador +1 ;
+	Hasta Que contador = 5 o numero= minumero 
+	Escribir " El número pensado es ; " , numero;
+	
+
+	
+	
+FinProceso
